@@ -1,0 +1,12 @@
+setuid = stunnel
+setgid = stunnel
+
+pid = /var/run/stunnel/stunnel.pid
+
+socket = l:TCP_NODELAY=1
+socket = r:TCP_NODELAY=1
+debug = ${STUNNEL_DEBUG}
+output = /var/log/stunnel/stunnel.log
+foreground = yes
+
+${OUT}
